@@ -10,7 +10,7 @@ const PORT=process.env.PORT
 
 app.use(cors({
     credentials:true,
-    origin:'http://localhost:5173',
+    origin:'https://buildpattern.netlify.app',
 }))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}))
