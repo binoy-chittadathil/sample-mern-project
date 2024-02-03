@@ -6,7 +6,7 @@ function Form() {
     async function handleSubmit(ev){
         ev.preventDefault();
         try{
-          const response=await axios.post('http://localhost:3000/pattern/create',{limit});
+          const response=await axios.post('https://pattern-api.onrender.com/pattern/create',{limit});
           alert('data successfully saved')
            console.log(response);
            

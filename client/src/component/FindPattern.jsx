@@ -7,7 +7,7 @@ function FindPattern() {
     async function handleFind(ev){
         ev.preventDefault();
        try{
-        const {data}=await axios.post('http://localhost:3000/pattern/find',{number});
+        const {data}=await axios.post('https://pattern-api.onrender.com/pattern/find',{number});
        setPattern(data.ptrn)
        }catch(err){
         alert('no pattern found')
